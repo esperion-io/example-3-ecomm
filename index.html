@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Modern Fashion Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">LUXE</div>
+        <div class="nav-links">
+            <a href="#new-arrivals">New Arrivals</a>
+            <a href="#collections">Collections</a>
+            <a href="#accessories">Accessories</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-bag" id="cart-icon"><span class="cart-count">0</span></i>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Summer Collection 2024</h1>
+            <p>Discover the latest trends in sustainable fashion</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </header>
+
+    <section id="new-arrivals" class="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+            <div class="product-card" data-product-id="1">
+                <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=800&auto=format&fit=crop&q=60" alt="Summer Dress">
+                <h3>Floral Summer Dress</h3>
+                <p class="price">$129.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="2">
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=60" alt="Linen Blazer">
+                <h3>Linen Blazer</h3>
+                <p class="price">$199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-product-id="3">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&auto=format&fit=crop&q=60" alt="Silk Scarf">
+                <h3>Silk Scarf</h3>
+                <p class="price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections" class="collections">
+        <h2>Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=800&auto=format&fit=crop&q=60" alt="Sustainable Collection">
+                <h3>Sustainable Collection</h3>
+                <p>Eco-friendly fashion for a better tomorrow</p>
+            </div>
+            <div class="collection-card">
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=60" alt="Summer Essentials">
+                <h3>Summer Essentials</h3>
+                <p>Light and breezy pieces for the season</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="accessories" class="accessories">
+        <h2>Accessories</h2>
+        <div class="accessories-grid">
+            <div class="accessory-card" data-product-id="4">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&auto=format&fit=crop&q=60" alt="Leather Bag">
+                <h3>Leather Tote Bag</h3>
+                <p class="price">$249.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="accessory-card" data-product-id="5">
+                <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=800&auto=format&fit=crop&q=60" alt="Gold Necklace">
+                <h3>Gold Necklace</h3>
+                <p class="price">$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="accessory-card" data-product-id="6">
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&auto=format&fit=crop&q=60" alt="Sunglasses">
+                <h3>Designer Sunglasses</h3>
+                <p class="price">$159.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About LUXE</h2>
+            <p>We believe in sustainable fashion that makes you feel beautiful while making a positive impact on the environment. Our collections are carefully curated to bring you the latest trends with a conscience.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>LUXE</h3>
+                <p>Your destination for sustainable fashion</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#collections">Collections</a>
+                <a href="#accessories">Accessories</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LUXE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="Product Image">
+                </div>
+                <div class="modal-details">
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-price"></p>
+                    <div class="size-selector">
+                        <h3>Select Size</h3>
+                        <div class="size-options">
+                            <button class="size-btn">XS</button>
+                            <button class="size-btn">S</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn">L</button>
+                            <button class="size-btn">XL</button>
+                        </div>
+                    </div>
+                    <div class="quantity-selector">
+                        <h3>Quantity</h3>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-modal">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content cart-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">$0.00</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
